@@ -37,7 +37,6 @@ document.querySelector(".checkNumber").addEventListener("click", function () {
 
     //guess number is wrong
   } else if (getNumber !== randomNumber) {
-    console.log("2");
     if (score < 1) {
       displayMessage(".status", "Game Over!");
       document.querySelector("body").classList.remove("correct");
