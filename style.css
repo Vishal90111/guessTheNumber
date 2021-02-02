@@ -10,6 +10,11 @@ body.correct {
   color: #fff;
 }
 
+body.over {
+    background-color: red !important;
+    color: #fff;
+  }
+
 .secretNumber {
   background-color: #fff;
   color: initial;

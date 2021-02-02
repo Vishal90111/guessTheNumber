@@ -40,11 +40,13 @@ document.querySelector(".checkNumber").addEventListener("click", function () {
     console.log("2");
     if (score < 1) {
       displayMessage(".status", "Game Over!");
+      document.querySelector("body").classList.remove("correct");
+      document.querySelector("body").classList.add("over");
     } else {
       score--;
       displayMessage(
         ".status",
-        getNumber < randomNumber ? ":smile Too Low!" : "Too High!"
+        getNumber < randomNumber ? "Too Low!" : "Too High!"
       );
       displayMessage(".score", score);
     }
@@ -54,6 +56,7 @@ document.querySelector(".checkNumber").addEventListener("click", function () {
 // rest all values 
 document.querySelector(".tryAgain").addEventListener("click", function () {
   document.querySelector("body").classList.remove("correct");
+  document.querySelector("body").classList.remove("over");
   document.querySelector(".status").textContent = "Start Guessing...";
   randomNumber = Math.round(Math.random() * 20) + 1;
   document.querySelector(".secretNumber").textContent = "?";
