@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number!!</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font/font.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <!-- main container-->
+    <div class="container-fluid pt-5">
+        <!-- nav-->
+      <div class="row">
+        <div class="col">
+          <button type="button" class="tryAgain">Try Again!</button>
+        </div>
+        <div class="col text-right">Between 1 to 20</div>
+      </div>
+      <!-- header -->
+      <h1 class="text-center pt-5 pb-5">GUESS THE NUMBER??</h1>
+      <div class="row">
+        <div class="col-md-5"></div>
+          <div class="col-md-2 pt-5 pb-5">
+              <h1 class="secretNumber text-center p-3">
+              </h1></div>
+              <div class="col-md-5"></div>
+      </div>
+      <!-- input fields-->
+      <div class="row">
+        <div class="col-md-6 p-5">
+          <form>
+              <input
+                type="number"
+                name="guessNumber"
+                class="guessNumber"
+                pattern="[0-9][0-9]"
+                value="0"
+              />
+              <button type="button" class="checkNumber">
+                Enter!
+              </button>
+          </form>
+        </div>
+        <div class="col-md-6 p-5"><h4 class="status pb-5"> Start Guessing...</h4>
+        <div class="pb-3">Score : <span class="score"></span></div>
+        <div>High Score : <span class="highScore"></span></div>
+    </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

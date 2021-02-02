@@ -1,0 +1,35 @@
+body {
+  font-family: "Press Start 2P", cursive;
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+}
+
+body.correct {
+  background-color: green !important;
+  color: #fff;
+}
+
+.secretNumber {
+  background-color: #fff;
+  color: initial;
+}
+
+.guessNumber {
+  padding: 1rem;
+  font-size: 36px;
+  width: 40%;
+  height: calc(1.5em + 1rem + 25px);
+  background-color: initial;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: none;
+}
+
+input:focus {
+  border-radius: none;
+}
+
+button {
+  padding: 15px;
+}
